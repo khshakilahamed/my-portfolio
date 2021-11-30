@@ -1,0 +1,10 @@
+.contact-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea{
+    padding: 5px;
+    margin: 5px 0px;
+    outline: none;
+}

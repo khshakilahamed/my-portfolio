@@ -1,0 +1,34 @@
+.project-img{
+    /* transform: rotate(-25deg); */
+    /* width: 300px;
+    height: 500px; */
+    height: 90vh;
+}
+
+.project-container{
+    border: 1px solid rgba(158, 76, 165, 0.582);
+    position: relative;
+    overflow: hidden;
+}
+.project-content{
+    color: white;
+    background-color: rgba(158, 76, 165, 0.87);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    transition: all 0.5s;
+}
+.project-container:hover .project-content{
+    top: 0;
+}
+
+.project-content a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s;
+}
+.project-content a:hover{
+    color: rgba(91, 3, 99, 0.87);
+}
