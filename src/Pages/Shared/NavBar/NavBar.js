@@ -25,6 +25,9 @@ const NavBar = () => {
                                 <NavHashLink to="/home#contact" className="nav-line"> Contact</NavHashLink>
                             </Nav.Link>
                             <Nav.Link>
+                                <Link to="/blogs" className="nav-line"> Blogs</Link>
+                            </Nav.Link>
+                            <Nav.Link>
                                 <Link to="/about" className="nav-line"> About</Link>
                             </Nav.Link>
                         </Nav>
