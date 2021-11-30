@@ -1,14 +1,17 @@
 import React from 'react';
-import autoX from '../../images/projects/autoX.png';
-import worldTour from '../../images/projects/world_tour.png';
-import silverGym from '../../images/projects/silver_gym.png';
+import autoX from '../../images/projects/autoX.jpg';
+import worldTour from '../../images/projects/world_tour.jpg';
+import silverGym from '../../images/projects/silver_gym.jpg';
 import { Fade } from 'react-reveal';
 import './Projects.css'
 
 const Projects = () => {
     return (
-        <div className="container" id="projects">
-            <h2 className="text-center my-5">My Projects</h2>
+        <div className="container" id="projects" style={{ height: '80vh' }}>
+            <div className="my-5 py-4">
+                <h2 className="text-center mt-5">My Works</h2>
+                <p className="text-center mb-4">Check these out, Hope you will get a real idea about me.</p>
+            </div>
             <Fade bottom>
                 <section className="projects-container">
                     <div className="row">
