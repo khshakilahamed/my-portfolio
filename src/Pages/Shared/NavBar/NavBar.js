@@ -1,5 +1,7 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import { NavHashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 import './NavBar.css';
 
 const NavBar = () => {
@@ -7,23 +9,24 @@ const NavBar = () => {
         <div>
             <Navbar collapseOnSelect expand="lg" bg="dark" className="navbar-container" variant="dark">
                 <Container>
-                    <Navbar.Brand href="#home">
-                        <img
-                            className="nav-icon"
-                            alt=""
-                            src=""
-                            // width="60"
-                            // height="60"
-                            className="d-inline-block align-top"
-                        />{' '}
-                        Portfolio
-                    </Navbar.Brand>
+                    <Link to="/home" style={{ textDecoration: 'none' }}>
+                        <Navbar.Brand>Portfolio</Navbar.Brand>
+                    </Link>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-center">
                         <Nav className="text-center">
-                            <Nav.Link href="#home">Projects</Nav.Link>
-                            <Nav.Link href="#pricing">Contact</Nav.Link>
-                            <Nav.Link href="#features">About</Nav.Link>
+                            <Nav.Link>
+                                <Link to="/home#" className="nav-line"> Home</Link>
+                            </Nav.Link>
+                            <Nav.Link>
+                                <NavHashLink to="/home#projects" className="nav-line"> Projects</NavHashLink>
+                            </Nav.Link>
+                            <Nav.Link>
+                                <NavHashLink to="/home#contact" className="nav-line"> Contact</NavHashLink>
+                            </Nav.Link>
+                            <Nav.Link>
+                                <Link to="/about" className="nav-line"> About</Link>
+                            </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

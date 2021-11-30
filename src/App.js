@@ -1,20 +1,28 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Banner from './Pages/Home/Banner/Banner';
-import Contact from './Pages/Home/Contact/Contact';
-import Footer from './Pages/Shared/Footer/Footer';
-import NavBar from './Pages/Shared/NavBar/NavBar';
-import Projects from './Pages/Projects/Projects';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import Home from './Pages/Home/Home/Home';
+import About from './Pages/About/About';
 
 function App() {
   return (
-    <div style={{ overflow: 'hidden' }}>
-      <NavBar></NavBar>
-      <Banner></Banner>
-      <Projects></Projects>
-      <Contact></Contact>
-      <Footer></Footer>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <Home></Home>
+        </Route>
+        <Route path="/home">
+          <Home></Home>
+        </Route>
+        <Route path="/about">
+          <About></About>
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

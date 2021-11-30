@@ -24,7 +24,7 @@ const Contact = () => {
             });
     }
     return (
-        <div className="container my-5 py-5">
+        <div className="container my-5 py-5" id="contact">
             <h2 className="text-center mb-5" >Contact With Me</h2>
             <div className="row">
                 <Fade left>

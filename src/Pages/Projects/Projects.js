@@ -7,7 +7,7 @@ import './Projects.css'
 
 const Projects = () => {
     return (
-        <div className="container">
+        <div className="container" id="projects">
             <h2 className="text-center my-5">My Projects</h2>
             <Fade bottom>
                 <section className="projects-container">
