@@ -8,6 +8,7 @@ import {
 import Home from './Pages/Home/Home/Home';
 import About from './Pages/About/About';
 import Blogs from './Pages/Blogs/Blogs';
+import ProjectDetails from './Pages/Projects/ProjectDetails/ProjectDetails';
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
         </Route>
         <Route path="/about">
           <About></About>
+        </Route>
+        <Route path="/projects/:id">
+          <ProjectDetails></ProjectDetails>
         </Route>
         <Route path="/blogs">
           <Blogs></Blogs>

@@ -1,15 +1,15 @@
 import React from 'react';
 import Typical from 'react-typical'
-import banner from '../../../images/banner.jpg';
+import banner from '../../../images/banner1.png';
 import './Banner.css';
 
 const Banner = () => {
     return (
         <div className="banner-container">
-            <div className="container">
+            <div className="container pt-5">
                 <div className="row">
                     <div className="col-md-6 d-flex align-items-center ">
-                        <div className="banner-titles">
+                        <div className="banner-titles text-light">
                             <p >Welcome to My World</p>
                             <h1 className="name-title">Hi, I'm <span style={{ color: '#B03A2E' }}>Kh. Shakil</span> </h1>
                             <h1>

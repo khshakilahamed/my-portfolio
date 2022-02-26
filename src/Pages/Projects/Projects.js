@@ -4,6 +4,7 @@ import worldTour from '../../images/projects/world_tour.jpg';
 import silverGym from '../../images/projects/silver_gym.jpg';
 import { Fade } from 'react-reveal';
 import './Projects.css'
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
     const [projects, setProjects] = useState([]);
@@ -31,49 +32,21 @@ const Projects = () => {
                                         <img className="img-fluid w-100 project-img" src={project.shortImg} alt="" />
                                         <div className="project-content d-flex align-items-center justify-content-center">
                                             <div>
-                                                <h4>{project.projectName}</h4>
+                                                <h5>{project.projectName}</h5>
                                                 <a href={project.liveSite} target="_blank"><i className="fas fa-external-link-alt fa-2x m-4"></i></a>
                                                 <a href={project.clientCode} target="_blank"><i class="fab fa-github fa-2x m-4"></i></a>
-                                                <a href={project.serverCode} target="_blank"><i class="fas fa-server fa-2x m-4"></i></a>
-                                                <p><a href="#">View Details</a></p>
+                                                {
+                                                    project?.serverCode && <a href={project.serverCode} target="_blank"><i class="fas fa-server fa-2x m-4"></i></a>
+                                                }
+                                                <Link to={`/projects/${project.id}`}>
+                                                    <p style={{ cursor: 'pointer' }}>View Details</p>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>)
                         }
-                        {/* <div className="col-md-4 text-center ">
-                            <div className="p-3">
-                                <div className="project-container">
-                                    <img className="img-fluid w-100 project-img" src={worldTour} alt="" />
-                                    <div className="project-content d-flex align-items-center justify-content-center">
-                                        <div>
-                                            <h4>WorldTourBD- The Travel Agency</h4>
-                                            <a href="https://world-tour-bd-work-11.web.app/" target="_blank"><i className="fas fa-external-link-alt fa-2x m-4"></i></a>
-                                            <a href="https://github.com/khshakilahamed/world-tour-bd-work-11" target="_blank"><i class="fab fa-github fa-2x m-4"></i></a>
-                                            <a href="https://github.com/khshakilahamed/world-tour-bd-work-11-server" target="_blank"><i class="fas fa-server fa-2x m-4"></i></a>
-                                            <p><a href="#">View Details</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4 text-center ">
-                            <div className="p-3">
-                                <div className="project-container">
-                                    <img className="img-fluid w-100 project-img" src={silverGym} alt="" />
-                                    <div className="project-content d-flex align-items-center justify-content-center">
-                                        <div>
-                                            <h4>SilverGym- The Gym Website</h4>
-                                            <a href="https://silver-bd-gym-assignment-10.web.app/" target="_blank"><i className="fas fa-external-link-alt fa-2x m-4"></i></a>
-                                            <a href="https://github.com/khshakilahamed/silver-bd-gym-work-10" target="_blank"><i class="fab fa-github fa-2x m-4"></i></a>
-                                            <p><a href="#">View Details</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> */}
-
                     </div>
                 </section>
             </Fade>

@@ -9,7 +9,7 @@ const About = () => {
     return (
         <div>
             <NavBar></NavBar>
-            <div className="about-container" style={{ height: '100vh' }}>
+            <div className="about-container py-5" style={{ height: '100vh' }}>
                 <div className="container">
                     <div className="row py-5">
                         <Fade left>

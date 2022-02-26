@@ -7,7 +7,7 @@ import './NavBar.css';
 const NavBar = () => {
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg" bg="dark" className="navbar-container" variant="dark">
+            <Navbar collapseOnSelect expand="lg" bg="dark"  variant="dark" fixed="top">
                 <Container>
                     <Link to="/home" style={{ textDecoration: 'none' }}>
                         <Navbar.Brand>Portfolio</Navbar.Brand>

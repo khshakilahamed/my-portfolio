@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "projectName": "autoX- The Online Bike Store",
+        "projectName": "AutoX- The Online Bike Store",
         "shortImg": "https://i.ibb.co/2FCq3qn/auto-X-short.jpg",
         "technologies": "CSS, React, Node.js, Express, MongoDB, Bootstrap5, Heroku, Firebase,Authentication, Firebase Deploy.",
         "liveSite": "https://auto-x-work-12.web.app/",
@@ -93,7 +93,7 @@
             "img": "https://i.ibb.co/1Lgq7Gh/silver-gym-3.png",
             "details": [
                 "Now, the Blog page.",
-                "Here are some blogs about our health. To read these blogs, humans could be careful about their health and how could be healthy."
+                "Here are some blogs about our health. To read these blogs, humans could be careful about their health and they will know how could be healthy in our daily life."
             ]
         }
     }
